@@ -24,3 +24,13 @@ The Cloud9 IDE team
 
 Visit http://docs.c9.io for documentation, or http://support.c9.io for support.
 To watch some training videos, visit http://www.youtube.com/user/c9ide
+
+
+** 5/18 
+
+Adding logic comments and js file
+
+
+replace classes with id's (#) 
+add bootstrap for responsive design
+create a class for the boxes in general
