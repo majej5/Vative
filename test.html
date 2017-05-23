@@ -141,7 +141,7 @@ Copyright (c) 2015 Daniel Eden
   }
 }
 /*           Font Smoothing      */
-body,
+,
 h1, .h1,
 h2, .h2,
 h3, .h3,
@@ -4133,21 +4133,18 @@ body > .navbar-collapse[data-color="purple"]:after {
 	content: "\e67f";
 }
 
-body {
-  margin: 40px;
-}
 .side{
   float:left;
   clear:both;
 }
 .wrapper1 {
   display: grid;
-  grid-template-columns: 200px 200px 200px;
+  grid-template-columns: 100px 100px 100px;
   grid-gap: 10px;
   background-color: #fff;
   color: #444;
   height: 300px;
-  width: 150px;
+  width: 50px;
 
   
 }
@@ -4209,21 +4206,36 @@ body {
   font-size: 150%;
 }
 
+#chartPreferences  {
+	margin:auto;
+	width:100%
 
+}
+#chartPreferences ul {
+	margin:auto;
+	list-style-type: none;
+	display: block;
+	text-decoration: none;
+}
+
+#chartPreferences ul li {
+   display: inline-block;
+   padding: 50px;
+}
+
+#chartPreferences ul li img{
+max-height:95vh;
+max-width:95vh;
+}
 </style>
 
 </head>
 <body>
-
+  Hey
 <div class="wrapper">
     <div class="sidebar" data-color="orange" data-image="assets/img/sidebar-5.jpg">
 
-    <!--
 
-        Tip 1: you can change the color of the sidebar using: data-color="blue | azure | green | orange | red | purple"
-        Tip 2: you can also add an image using data-image tag
-
-    -->
 
     	<div class="sidebar-wrapper">
             <div class="logo">
@@ -4250,13 +4262,6 @@ body {
                     </a>
                 </li>
 				
-				  <ul class="nav nav-pills">
-    <li><a data-toggle="pill" href="#home">Operational Unit</a></li>
-    <li><a data-toggle="pill" href="#menu1">OS 1</a></li>
-    <li><a data-toggle="pill" href="#menu2">OS 2</a></li>
-    <li><a data-toggle="pill" href="#menu3">OS 3</a></li>
-  </ul>
-                <li>
                     <a href="typography.html">
                         <i class="pe-7s-news-paper"></i>
                         <p>stats</p>
@@ -4315,7 +4320,14 @@ body {
                                 <p class="category">Employees To Be Considerd for Promotion</p>
                             </div>
                             <div class="content">
-                                <div id="chartPreferences" class="ct-chart ct-perfect-fourth"></div>
+                                <div id="chartPreferences" class="ct-chart ct-perfect-fourth">
+                                  								<ul>
+									<li><a href ="#"><img src= "https://cdn.onelogin.com/images/icons/square/paylocity-webpay/portal_big_2x.png?1427292875/"  class="img-responsive">Semaje </a></li>
+									<li><a href ="#"><img src= "https://cdn.onelogin.com/images/icons/square/paylocity-webpay/portal_big_2x.png?1427292875/"  class="img-responsive">Endre </a></li>
+									<li><a href ="#"><img src= "https://cdn.onelogin.com/images/icons/square/paylocity-webpay/portal_big_2x.png?1427292875/"  class="img-responsive">Mauricio </a></li>
+								</ul>
+								</div>
+                                </div>
 
                                 <div class="footer">
                                     <hr>
@@ -4348,7 +4360,7 @@ body {
   <div class="boxh">H</div>
   <div class="boxi">I</div>
 </div>
-<p>PERFORMANCE</p>
+<p>P E R F O R M A N C  E </p>
                             </div>
                             <div class="content">
                                 <div id="chartActivity" class="ct-chart"></div>
