@@ -5,11 +5,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="stylesheet.css">  
-    
+  <link rel="stylesheet" href="stylesheet.css">  
   </head>
-
- <body>
+  <body>
 <nav class="navbar fixed-top navbar-light bg-faded">
   <div class="navbar-header">
       <div class="container-fluid">
@@ -19,9 +17,9 @@
 
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Help</a></li>
-          <li><a href="#">Sign Up</a></li>
-          <li><a href="#">Log In</a></li>
+          <li><a href="#" >Help</a></li>
+          <li><a href="#"  data-toggle="modal" data-target="#login-modal">Sign Up</a></li>
+          <li><a href="#"  data-toggle="modal" data-target="#login-modal">Log In</a></li>
         </ul>
       </div>
     </div>
@@ -31,7 +29,7 @@
     <h1>Paylocity</h1>
   </div>
     </div>
-    <div class="jumbotron">
+    <div class="jumbotron" id ="toptop">
           <p>Potential and performance are two words that often go together 
           although there is a key difference between these two words. 
           Potential refers to the capabilities of an individual that 
@@ -45,14 +43,10 @@
           guarantees high performance, high performance does not guarantee 
           high potential. This article aims at elaborating this difference further.
           </p>
-
-              <img src = "https://cdn.onelogin.com/images/icons/square/paylocity/portal_big_2x.png?1427294383" id= "papple" />
-        
-              
+</div>
         <div class="parallax2">
         </div>
   
- <img src = "https://cdn.onelogin.com/images/icons/square/paylocity/portal_big_2x.png?1427294383" id= "papple2" />
 <div class="learn-more">
 	  <div class="container-fluid">
       <div class="row">
@@ -72,11 +66,175 @@
 	    
 	    </div>
 	     <div class="jumbotron" id = "second">
-      <div class="clearfix">
           <h2>Here we belive in the power of potential</h2>
-      </div>
     </div> 
-        <footer class="footer-bs">
+<div class="container">
+	<div class="row">
+	</div>
+</div>
+<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    	<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header" align="center">
+					<img class="img" id="img_logo" src="https://www.qualys.com/asset/image/logo/paylocity-500.png">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+					</button>
+				</div>
+                
+                <div id="div-forms">
+                    <form id="login-form">
+		                <div class="modal-body">
+				    		<div id="div-login-msg">
+                                <div id="icon-login-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                <span id="text-login-msg">Type your username and password.</span>
+                            </div>
+				    		<input id="login_username" class="form-control" type="text" placeholder="Username" required>
+				    		<input id="login_password" class="form-control" type="password" placeholder="Password" required>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Remember me
+                                </label>
+                            </div>
+        		    	</div>
+				        <div class="modal-footer">
+                            <div>
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">Login</button>
+                            </div>
+				    	    <div>
+                                <button id="login_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
+                                <button id="login_lost_btn" type="button" class="btn btn-link"><a href="#"  data-toggle="modal" data-target="#login-modal">Register</a></button>
+                            </div>
+				        </div>
+                    </form>
+                    <form id="lost-form" style="display:none;">
+    	    		    <div class="modal-body">
+		    				<div id="div-lost-msg">
+                                <div id="icon-lost-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                <span id="text-lost-msg">Type your e-mail.</span>
+                            </div>
+		    				<input id="lost_email" class="form-control" type="text" placeholder="E-Mail (type ERROR for error effect)" required>
+            			</div>
+		    		    <div class="modal-footer">
+                            <div>
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">Send</button>
+                            </div>
+                            <div>
+                                <button id="lost_login_btn" type="button" class="btn btn-link">Log In</button>
+                                <button id="lost_register_btn" type="button" class="btn btn-link">Register</button>
+                            </div>
+		    		    </div>
+                    </form>
+                    <form id="register-form" style="display:none;">
+            		    <div class="modal-body">
+		    				<div id="div-register-msg">
+                                <div id="icon-register-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                <span id="text-register-msg">Register an account.</span>
+                            </div>
+		    				<input id="register_username" class="form-control" type="text" placeholder="Username (type ERROR for error effect)" required>
+                            <input id="register_email" class="form-control" type="text" placeholder="E-Mail" required>
+                            <input id="register_password" class="form-control" type="password" placeholder="Password" required>
+            			</div>
+		    		    <div class="modal-footer">
+                            <div>
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">Register</button>
+                            </div>
+                            <div>
+                                <button id="register_login_btn" type="button" class="btn btn-link">Log In</button>
+                                <button id="register_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
+                            </div>
+		    		    </div>
+                    </form>
+                </div>
+                
+                <div class="container">
+	<div class="row">
+	</div>
+</div>
+<div class="modal fade" id="regiser-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    	<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header" align="center">
+					<img class="img" id="img_logo" src="https://www.qualys.com/asset/image/logo/paylocity-500.png">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+					</button>
+				</div>
+                
+                <div id="div-forms">
+                    <form id="login-form">
+		                <div class="modal-body">
+				    		<div id="div-login-msg">
+                                <div id="icon-login-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                <span id="text-login-msg">Type your username and password.</span>
+                            </div>
+				    		<input id="login_username" class="form-control" type="text" placeholder="Username" required>
+				    		<input id="login_password" class="form-control" type="password" placeholder="Password" required>
+				    		
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Remember me
+                                </label>
+                            </div>
+        		    	</div>
+				        <div class="modal-footer">
+                            <div>
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">Login</button>
+                            </div>
+				    	    <div>
+                                <button id="login_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
+                                <button id="login_lost_btn" type="button" class="btn btn-link"><a href="#"  data-toggle="modal" data-target="#login-modal">Register</a></button>
+                            </div>
+				        </div>
+                    </form>
+                    <form id="lost-form" style="display:none;">
+    	    		    <div class="modal-body">
+		    				<div id="div-lost-msg">
+                                <div id="icon-lost-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                <span id="text-lost-msg">Type your e-mail.</span>
+                            </div>
+		    				<input id="lost_email" class="form-control" type="text" placeholder="E-Mail (type ERROR for error effect)" required>
+            			</div>
+		    		    <div class="modal-footer">
+                            <div>
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">Send</button>
+                            </div>
+                            <div>
+                                <button id="lost_login_btn" type="button" class="btn btn-link">Log In</button>
+                                <button id="lost_register_btn" type="button" class="btn btn-link">Register</button>
+                            </div>
+		    		    </div>
+                    </form>
+                    <form id="register-form" style="display:none;">
+            		    <div class="modal-body">
+		    				<div id="div-register-msg">
+                                <div id="icon-register-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                <span id="text-register-msg">Register an account.</span>
+                            </div>
+		    				<input id="register_username" class="form-control" type="text" placeholder="Username (type ERROR for error effect)" required>
+                            <input id="register_email" class="form-control" type="text" placeholder="E-Mail" required>
+                            <input id="register_password" class="form-control" type="password" placeholder="Password" required>
+            			</div>
+		    		    <div class="modal-footer">
+                            <div>
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">Register</button>
+                            </div>
+                            <div>
+                                <button id="register_login_btn" type="button" class="btn btn-link">Log In</button>
+                                <button id="register_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
+                            </div>
+		    		    </div>
+                    </form>
+                </div>
+                			</div>
+		</div>
+		</div>
+              
+			</div>
+		</div>
+	</div>        
+	
+	<footer class="footer-bs">
         <div class="row">
         	<div class="col-md-3 footer-brand animated fadeInLeft">
             	            <img src="https://www.qualys.com/asset/image/logo/paylocity-500.png" ></a></li>
@@ -120,7 +278,5 @@
             </div>
         </div>
     </footer>
-	  </div>
-	</div>
 </body>
 </html>
