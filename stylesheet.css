@@ -88,18 +88,18 @@ body{
     transform: translate(-50%, -50%);
     color: white;
 }
-.hero-text h1{
-  font-size: 85px;
-  
+
+
+.parallax h1{
+  position:relative;
+  font-size:10vw;
+  left:50%;
+  top:200px;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  color: white;
 }
 
-.parallax h2{
-  text-align: center;
-  margin: auto;
-  margin-top:25px;
-  color:white;
-  height:500px;
-}
 .parallax2{
     background-image: url("https://www.paylocity.com/wp-content/uploads/2015/09/1612-Sliders_Analytics.jpg");
     min-height: 500px; 
@@ -233,9 +233,6 @@ text-align: center;
 margin-bottom: 30px;
 
 }
-
-/*header style* below*/
-
 header{
 width: 100%;
 height: 50px;
