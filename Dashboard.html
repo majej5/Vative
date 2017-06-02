@@ -162,7 +162,7 @@ float:left;
     margin-left: 20px;
     margin-top: 40px;
 	float:left;
-	width:1050px;
+	width:750px;
 }
 }
 
@@ -170,12 +170,15 @@ float:left;
 #pot{ 
 
 	letter-spacing:15px;
-}
+	font-weight:bolder;
 }
 
+}
 #performance{
+margin-top:35px;
 width:15px;
 float:left;
+font-weight:bolder;
 }
 
 
@@ -247,7 +250,8 @@ display:block;
 float:right;
 text-align:right;
 }
-media (min-width: 768px)
+
+@media (min-width: 768px) {
 navbar.less:317
 .navbar-form {
     width: auto;
@@ -260,6 +264,11 @@ navbar.less:317
     box-shadow: none;
 
 }
+}
+#list{height:300px; width:170px; margin-top:50px;}
+#list{overflow:hidden; overflow-y:scroll;}
+
+
   </style>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -356,18 +365,38 @@ navbar.less:317
 
           <h2 class="sub-header">Nine Grid</h2>
           <div class="table-responsive">
+              <div class="col-xs-2 col-sm-2">
+                   <ul id ="list">
+      <li>Mauricio Vargas</li>
+      <li>Link 2</li>
+      <li>Link 3</li>
+      <li>Link 4</li>
+      <li>Link 5</li>
+      <li>Link 6</li> 
+      <li>Link 7</li> 
+      <li>Link 8</li>
+      <li>Link 9</li>
+      <li>Link 10</li>
+      <li>Link 11</li>
+      <li>Link 13</li>
+      <li>Link 13</li>
+
+  </ul>
+  <button>Add Employee</button>
+  </div>
+  <div class="col-xs-9 col-sm-9">
 		  <div id="performance">
 <p>P</p><p>E</p><p>R</p><p>F</p><p>O</p><p>R</p><p>M</p><p>A</p><p>N</p><p>C</p><p>E</p>    
    </div>
 <!---- GRID ---------> 
     <div class="container" id="box">
-      
+     
       
 <!--ROW 1-->
   <div class="row rowBig" id="box1">
   
     <div class="col box" id="subBox1" >
-      <h4>Three3</h4>
+      <h4></h4>
       <p id="z1"></p>
       
     </div>
@@ -413,6 +442,8 @@ navbar.less:317
     </div>
   </div>
   <p id="pot" >POTENTIAL</p>
+  </div>
+  </div>
   </div>
           </div>
         </div>
