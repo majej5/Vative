@@ -1,0 +1,86 @@
+/*container*/
+
+#box{
+    
+    margin-left: 20px;
+    margin-top: 40px;
+}
+/*rows*/
+
+.rowBig {
+    
+    height: 200px;
+}
+
+
+
+
+
+
+/* zones */
+#box1{
+    
+    background-color: #E8D1A4;
+}
+#box2{
+    
+    background-color: #EDABB6;
+}
+#box3{
+    
+    background-color: #EDABB6;
+}
+#subBox1 {
+    
+      background-color: #E8D1A4;
+
+}
+
+
+#subBox2 {
+    
+      background-color: #DDA185;
+
+}
+#subBox3 {
+    
+      background-color: #DFE2DB;
+
+}
+#subBox4 {
+    
+      background-color: #FFF056;
+
+}
+#subBox5 {
+    
+      background-color: #7E8F7C;
+
+}
+#subBox6 {
+    
+      background-color: #74AFAD;
+
+}
+#subBox7 {
+    
+      background-color: #D9853B;
+
+}
+#subBox8 {
+    
+      background-color: #E8D1A4;
+
+}
+#subBox9 {
+    
+   
+
+}
+
+/* images */
+
+.img{
+    
+ii
+}

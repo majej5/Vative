@@ -1,0 +1,75 @@
+body {
+  margin-left: 400px;
+}
+.side{
+  float:left;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-gap: 10px;
+  background-color: #fff;
+  color: #444;
+  height: 500px;
+  width: 500px;
+  left:500;
+  top: 0;
+
+}
+
+.boxa {
+  background-color: yellow;
+  color: red;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}.boxb {
+  background-color: green;
+  color: red;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}.boxc {
+  background-color: green;
+  color: red;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}.boxd {
+  background-color: red;
+  color: red;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}.boxe {
+  background-color: yellow;
+  color: red;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}.boxf {
+  background-color: green;
+  color: red;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}.boxg {
+  background-color: red;
+  color: red;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}.boxh {
+  background-color: red;
+  color: red;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+.boxi {
+  background-color: yellow;
+  color: red;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
