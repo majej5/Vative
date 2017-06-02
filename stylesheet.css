@@ -54,6 +54,7 @@ body{
   font-family: 'Shift', sans-serif;
   font-size: 25px;
   font-weight: bold;
+  padding-bottom: 5px;
 }
 
 .learn-more a {
@@ -61,7 +62,8 @@ body{
 }
 
 .learn-more P {
-  font-size:25px;
+  font-size:20px;
+  text-align: center;
 
 }
 
