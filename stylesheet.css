@@ -47,15 +47,22 @@ body{
   background-image:url('http://goo.gl/04j7Nn');
   margin-left:-1px;
   margin-right:-15px;
+  padding-top: 15px;
+  padding-bottom: 10px;
 }
 .learn-more h3 {
   font-family: 'Shift', sans-serif;
-  font-size: 18px;
+  font-size: 25px;
   font-weight: bold;
 }
 
 .learn-more a {
   color: #00b0ff;
+}
+
+.learn-more P {
+  font-size:25px;
+
 }
 
 .navbar-left{
