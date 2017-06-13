@@ -484,6 +484,15 @@ display:none;
 #addBtn{
   display:none;
 }
+.my-info-1{
+  
+  border:2px red solid;
+  height:200px;
+  width:126px;
+}
+.hide {
+  display: none;
+}
   </style>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -583,60 +592,36 @@ display:none;
           <div class="table-responsive">
               <div class="col-xs-2 col-sm-2 " id="NINE">
                 <h3 id="manager">Manager List</h3>
-  <div class="panel-group" id="accordion">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Semaje Bell</a>
-        </h4>
-      </div>
-      <div id="collapse1" class="panel-collapse collapse in">
-        <div class="panel-body">
-<ul id = "myul">
-  <li>Steve</li>
-  <li>mike</li>
-  <li>Steve</li>
-  <li>mike</li>
-</ul>
-</div>
-      </div>
-    </div>
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Yvonne Verville </a>
-        </h4>
-      </div>
-      <div id="collapse2" class="panel-collapse collapse">
-        <div class="panel-body">
-<ul id = "myul">
-  <li>Steve</li>
-  <li>mike</li>
-  <li>Steve</li>
-  <li>mike</li>
-</ul>
-</div>
-      </div>
-    </div>
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Msauricio Vargas</a>
-        </h4>
-      </div>
-      <div id="collapse3" class="panel-collapse collapse">
-        <div class="panel-body">
-<ul id = "myul">
-  <li>Steve</li>
-  <li>mike</li>
-  <li>Steve</li>
-  <li>mike</li>
-	</ul>
-	</div>
-      </div>
-    </div>
-  </div>
 
+<select class="div-toggle" data-target=".my-info-1">
+  <option value="Mauricio Vargas" data-show=".citrus">Mauricio Vargas</option>
+  <option value="Semaje Bell" data-show=".citrus">Semaje Bell</option>
+  <option value="Devonte Lowe" data-show=".pome">Devonte Lowe</option>
+  <option value="Endre Roman" data-show=".pome">Endre Roman</option>
+</select>
+
+<div class="my-info-1">
+  <div class="citrus hide">
+    <ul>
+      <li><a href "#">Steve</a></li>
+      <li>Mike</li>
+      <li>Fabio</li>
+      <li>Roger</li>
+      <li>Nora</li>
+      <li>James</li>
+    </ul>
+  </div>
+  <div class="pome hide">
+    <ul>
+      <li><a href="#">Steve</a></li>
+      <li>Mike</li>
+      <li>Fabio</li>
+      <li>James</li>
+    </ul>
+    </div>
+</div>
+  <input type="text" id="myInput" placeholder="Add Manager...">
+  <span onclick="newElement()" class="addBtn">Add</span>
   </div>
   <div class="col-xs-9 col-sm-9">
 		  <div id="performance">
@@ -801,7 +786,7 @@ var user3 = {
     lastName: "Xavier",
     pValue: 1,
     zone: 1
-    }u8
+    }
     var user7 = {
     
     firstName: "Tasha",
@@ -874,9 +859,9 @@ $(document).ready(function(){
 
 function myFunction() {
     var input, filter, ul, li, a, i;
-    input = document.getElementById("myInputS");
+    input = document.getElementById("myInput");
     filter = input.value.toUpperCase();
-    ul = document.getElementById("myul");
+    ul = document.getElementById("div-toggle");
     li = ul.getElementsByTagName("li");
     for (i = 0; i < li.length; i++) {
         a = li[i].getElementsByTagName("a")[0];
@@ -889,14 +874,14 @@ function myFunction() {
     }
 }
 function newElement() {
-  var li = document.createElement("li");
+  var option = document.createElement("option");
   var inputValue = document.getElementById("myInput").value;
   var t = document.createTextNode(inputValue);
-  li.appendChild(t);
+  option.appendChild(t);
   if (inputValue === '') {
     alert("You must write something!");
   } else {
-    document.getElementById("myul").appendChild(li);
+    document.getElementById("div-toggle").appendChild(li);
   }
   document.getElementById("myInput").value = "";
 
@@ -918,5 +903,15 @@ function newElement() {
     window.print();
 }
 }
+
+$(document).on('change', '.div-toggle', function() {
+  var target = $(this).data('target');
+  var show = $("option:selected", this).data('show');
+  $(target).children().addClass('hide');
+  $(show).removeClass('hide');
+});
+$(document).ready(function(){
+	$('.div-toggle').trigger('change');
+});
  </script>
 </html>
