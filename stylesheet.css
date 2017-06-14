@@ -3,33 +3,23 @@ body{
 }
 .nav{
   display: inline;
-  height:110px;
 }
 
 #toplogo{
-  height:150px;
+position:relative;
+top:85px;
+left:-70px;
+height:110px;
 
 }
 
-@media (min-width: 768px) {
-  li a {
-    margin-top: 10px;
-    padding-bottom: 15px;
-}
-}
 .nav a {
   color: #5a5a5a;
   font-size: 11px;
   font-weight: bold;
-  padding: 7px 10px;
   text-transform: uppercase;
 }
 
-.nav li {
-     margin-top: -45px;
-  display: inline;
-  
-}
 
 .jumbotron {
   background-image:url('http://goo.gl/04j7Nn'); 
@@ -89,6 +79,13 @@ body{
 }
 .navbar-right{
   text-align: right;
+}
+
+.navbar-center{
+  text-align: center;
+  position: relative;
+  top:100px;
+  right:-380px;
 }
 
 .nav img{
