@@ -152,12 +152,11 @@ margin-left:-30px;
 
 .nav-sidebar a {
 text-decoration: none;
-}`
+}
 
 .navbar-brand img{
 position:relative;
 top:-8px;
-background-color:#ff5511;
 }
 
 @media (min-width: 768px) {
@@ -412,7 +411,6 @@ text-align:right;
 }
 
 @media (min-width: 768px) {
-navbar.less:317
 .navbar-form {
     width: auto;
     padding-top: 0;
@@ -460,16 +458,18 @@ navbar.less:317
 @media (min-width: 768px) {
 #myInput{display:block;}
 }
-}
+
 
 
 #myInputS{
 display:none;
 }
+
 @media (min-width: 768px) {
-#myInputS{display:block;}
+#myInputS{
+  display:block;}
 }
-}
+
 
 #span{
   display:none;
@@ -483,9 +483,9 @@ display:none;
 }
 .my-info-1{
   
-  border:2px red solid;
   height:200px;
   width:126px;
+  border:2px solid black;
 }
 .hide {
   display: none;
