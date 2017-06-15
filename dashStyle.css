@@ -190,6 +190,8 @@ margin-top:17vw;
 
 	letter-spacing:15px;
 	font-weight:bolder;
+	padding-top:20px;
+	
 }
 
 }
@@ -213,7 +215,7 @@ font-weight:bolder;
 }
 #subBox1 {
   padding:10px;
-      background-color: yellow;
+      background-color: #FFee7e;
 border:solid black 1px;
       height:17vw;
       width:17vw;  
@@ -221,7 +223,7 @@ border:solid black 1px;
 @media (min-width: 768px) {
 #subBox1 {
   padding:10px;
-      background-color: yellow;
+      background-color: #FFee7e;
 border:solid black 1px;
       height:110px;
       width:250px;
@@ -230,7 +232,7 @@ border:solid black 1px;
 
 #subBox2 {
   padding:10px;
-      background-color: green;
+      background-color: #3dc270;
 border:solid black 1px;
       height:17vw;
       width:17vw;  
@@ -240,7 +242,7 @@ border:solid black 1px;
 
 #subBox2 {
   padding:10px;
-      background-color: green;
+      background-color: #3dc270;
 border:solid black 1px;
       height:110px;
       width:250px;
@@ -250,7 +252,7 @@ border:solid black 1px;
 
 #subBox3 {
   padding:10px;
-      background-color: green;
+      background-color: #3dc270;
 border:solid black 1px;
       height:17vw;
       width:17vw;  
@@ -262,7 +264,7 @@ border:solid black 1px;
 
 #subBox3 {
   padding:10px;
-      background-color: green;
+      background-color: #3dc270;
 border:solid black 1px;
       height:110px;
       width:250px;
@@ -273,7 +275,7 @@ border:solid black 1px;
 
 #subBox4 {
   padding:10px;
-      background-color: red;
+      background-color: #e35e6b;
 border:solid black 1px;
       height:17vw;
       width:17vw;  
@@ -284,7 +286,7 @@ border:solid black 1px;
 
 #subBox4 {
   padding:10px;
-      background-color:red;
+      background-color:#e35e6b;
 border:solid black 1px;
       height:110px;
       width:250px;
@@ -294,7 +296,7 @@ border:solid black 1px;
 
 #subBox5 {
   padding:10px;
-      background-color: yellow;
+      background-color: #FFee7e;
 border:solid black 1px;
       height:17vw;
       width:17vw;  
@@ -305,7 +307,7 @@ border:solid black 1px;
 
 #subBox5 {
   padding:10px;
-      background-color:yellow;
+      background-color:#FFee7e;
 border:solid black 1px;
       height:110px;
       width:250px;
@@ -315,7 +317,7 @@ border:solid black 1px;
 
 #subBox6 {
   padding:10px;
-      background-color: green;
+      background-color: #3dc270;
 border:solid black 1px;
       height:17vw;
       width:17vw;  
@@ -326,7 +328,7 @@ border:solid black 1px;
 
 #subBox6 {
   padding:10px;
-      background-color:green;
+      background-color:#3dc270;
 border:solid black 1px;
       height:110px;
       width:250px;
@@ -336,7 +338,7 @@ border:solid black 1px;
 
 #subBox7 {
   padding:10px;
-      background-color: red;
+      background-color: #e35e6b;
 border:solid black 1px;
       height:17vw;
       width:17vw;  
@@ -347,7 +349,7 @@ border:solid black 1px;
 
 #subBox7 {
   padding:10px;
-      background-color:red;
+      background-color:#e35e6b;
 border:solid black 1px;
       height:110px;
       width:250px;
@@ -357,7 +359,7 @@ border:solid black 1px;
 
 #subBox8 {
   padding:10px;
-      background-color: red;
+      background-color: #e35e6b;
 border:solid black 1px;
       height:17vw;
       width:17vw;}
@@ -366,7 +368,7 @@ border:solid black 1px;
 
 #subBox8 {
   padding:10px;
-      background-color:red;
+      background-color:#e35e6b;
 border:solid black 1px;
       height:110px;
       width:250px;
@@ -376,7 +378,7 @@ border:solid black 1px;
 
 #subBox9 {
   padding:10px;
-      background-color: yellow;
+      background-color: #FFee7e;
 border:solid black 1px;
       height:17vw;
       width:17vw;  
@@ -387,7 +389,7 @@ border:solid black 1px;
 
 #subBox9 {
   padding:10px;
-      background-color:yellow;
+      background-color:#FFee7e;
 border:solid black 1px;
       height:110px;
       width:250px;
@@ -420,9 +422,9 @@ navbar.less:317
     border: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
-
-}.
 }
+}
+
 #list{height:300px; width:170px; margin-top:25px; list-style-type:none; padding:15px;}
 #list{overflow:hidden; overflow-y:scroll; border:solid 2px;}
   
@@ -487,4 +489,11 @@ display:none;
 }
 .hide {
   display: none;
+}
+#logo{
+  
+  position: relative;
+  top:-50px;
+  left:35px;
+  
 }

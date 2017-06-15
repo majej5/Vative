@@ -14,7 +14,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="dashStyle.css">  
-    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
@@ -31,7 +30,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#"><img src="https://www.qualys.com/asset/image/logo/paylocity-500.png" width="200" height="35" /></a>
+          <a class="navbar-brand" href="#"><img src="paytentiallogo2.png" id ="logo" width="300" height="160" /> </a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -49,7 +48,7 @@
             <a class="active" href="#">Overview <span class="sr-only">(current)</span></a>
             <a href="#">Reports</a>
             <a href="#">Analytics</a>
-            <a href12qwssassz="myPrint()">Export</a>
+            <a href="myPrint()">Export</a>
 		</div>
 		</div>
         </div>
@@ -58,22 +57,22 @@
 
           <div class="row placeholders">
             <div class="col-xs-6 col-sm-3 placeholder">
-              <img src="https://cdn.onelogin.com/images/icons/square/paylocity-webpay/portal_big_2x.png?1427292875" width="150" height="150" class="img-responsive" alt="Generic placeholder thumbnail">
+              <img src="https://cdn.onelogin.com/images/icons/square/paylocity-webpay/portal_big_2x.png?1427292875" width="75" height="75" class="img-responsive" alt="Generic placeholder thumbnail">
               <h4>Mauricio</h4>
               <span class="text-muted">Top Employee</span>
             </div>
             <div class="col-xs-6 col-sm-3 placeholder">
-<img src="https://cdn.onelogin.com/images/icons/square/paylocity-webpay/portal_big_2x.png?1427292875" width="150" height="150" class="img-responsive" alt="Generic placeholder thumbnail">              
+<img src="https://cdn.onelogin.com/images/icons/square/paylocity-webpay/portal_big_2x.png?1427292875" width="75" height="75" class="img-responsive" alt="Generic placeholder thumbnail">              
 <h4>Devonte</h4>
               <span class="text-muted">Top Employee</span>
             </div>
             <div class="col-xs-6 col-sm-3 placeholder">
-<img src="https://cdn.onelogin.com/images/icons/square/paylocity-webpay/portal_big_2x.png?1427292875" width="150" height="150" class="img-responsive" alt="Generic placeholder thumbnail">
+<img src="https://cdn.onelogin.com/images/icons/square/paylocity-webpay/portal_big_2x.png?1427292875" width="75" height="75" class="img-responsive" alt="Generic placeholder thumbnail">
               <h4>Endre</h4>
               <span class="text-muted">Top Employee</span>
             </div>
             <div class="col-xs-6 col-sm-3 placeholder">
-<img src="https://cdn.onelogin.com/images/icons/square/paylocity-webpay/portal_big_2x.png?1427292875" width="150" height="150" class="img-responsive" alt="Generic placeholder thumbnail">
+<img src="https://cdn.onelogin.com/images/icons/square/paylocity-webpay/portal_big_2x.png?1427292875" width="75" height="75" class="img-responsive" alt="Generic placeholder thumbnail">
               <h4>Semaje</h4>
               <span class="text-muted">Top Employee</span>
             </div>
@@ -197,7 +196,7 @@
     </div>
     </a>
   </div>
-  <p id="pot" >PORFORMANCE</p>
+  <p id="pot" >PERFORMANCE</p>
   </div>
   </div>
   </div>
@@ -309,7 +308,7 @@ var user3 = {
     zone: 3
     
     }
-	
+	  
 	var boxes = document.getElementsByClassName("box")
 for(var i=0; i < boxes.length; i++) {
 	boxes[i].addEventListener("click", function(){userCheck(this.getAttribute('id').split('subBox')[1])});

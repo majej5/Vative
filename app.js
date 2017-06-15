@@ -87,7 +87,8 @@ var user3 = {
     zone: 3
     
     }
-	
+var output = document.getElementById('output')
+output.innerHTML ='BOOOOTY'
 	var boxes = document.getElementsByClassName("box")
 for(var i=0; i < boxes.length; i++) {
 	boxes[i].addEventListener("click", function(){userCheck(this.getAttribute('id').split('subBox')[1])});

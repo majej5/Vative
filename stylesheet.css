@@ -3,11 +3,13 @@ body{
 }
 .nav{
   display: inline;
+  position: relative;
+  top:-5px;
+  height:110px;
 }
 
 #toplogo{
 position:relative;
-top:85px;
 left:-70px;
 height:110px;
 
@@ -88,11 +90,6 @@ height:110px;
   right:-380px;
 }
 
-.nav img{
-  height:75px;
-  
-}
-
 .parallax{
     background-image:url('https://www.paylocity.com/wp-content/uploads/2015/09/1612-Sliders_Main-1.jpg');
     min-height: 500px; 
@@ -100,7 +97,7 @@ height:110px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-left: -25px;
+    margin-left:-25px;
     margin-right:-25px;
     margin-top:-20px;
 
@@ -279,12 +276,20 @@ margin-bottom: 10px;
 .modal-content img{
   width:300px;
 }
-
+@media (min-width: 768px) {
 .navbar-nav a{
-    margin-top: 150px;
+    margin-top:65px;
 }
-
+}
 #logo{
   margin:auto;
   height:500px;
+}
+.rightnav{
+  color:red;
+}
+.navbar-center{
+  position: relative;
+  top:35px;
+  left:375px;
 }
