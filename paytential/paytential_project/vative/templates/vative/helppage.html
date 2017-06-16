@@ -1,0 +1,125 @@
+<!doctype html>
+	{% load staticfiles %}
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" type="text/css"  href="{% static "vative/css/helppage.css" %}"/>
+	<!-- <link type="text/javascript" href="{% static 'vative/js/jquery-1.11.3.min.js' %}">
+This is the shit you've been working on in terms of trying to get the javascript to work for the application.-->
+	<script src="{% static "vative/js/modernizr.js" %}"></script>
+	 <!-- Modernizr -->
+	<title>Paytential Help Page</title>
+</head>
+<body>
+<header>
+	<h1>Help</h1>
+</header>
+<section class="cd-faq">
+	<ul class="cd-faq-categories">
+	<h2>FAQ's</h2>
+		<li><a class="selected" href="#basics">Basics</a></li>
+		<li><a href="#mobile">How to use Paytential</a></li>
+		<li><a href="#account">Account</a></li>
+		<li><a href="#payments">Other</a></li>
+	</ul> <!-- cd-faq-categories -->
+
+	<div class="cd-faq-items">
+		<ul id="basics" class="cd-faq-group">
+			<li class="cd-faq-title"><h2>Basics</h2></li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">How do I change my password?</a>
+				<div class="cd-faq-content">
+					<p>Under settings, there is an option that allows you change passwords. You will have to first input your old password followed by the new password, twice to confirm the spelling.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">How do I sign up?</a>
+				<div class="cd-faq-content">
+					<p>At the landing page of the Paytential App, there is a link next to the Log-In button that will take you to our registration page.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">Can I remove an Employee?</a>
+				<div class="cd-faq-content">
+					<p>Once an employee is created, a personel page will automatically be included with that individual. It is on the person's personel page where you will find the option to delete them at the bottom of the page.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">How do reviews work?</a>
+				<div class="cd-faq-content">
+					<p>Paytential offers tracking of the performance and potential of individuals. Additionally, it includes an area where comments could be left from managers. Future updates will include the feature of peer to peer review in order for colleagues to be able to identify the small thinngs that go above and beyond the call of duty, as well as things that may need some further training.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+		</ul> <!-- cd-faq-group -->
+
+		<ul id="mobile" class="cd-faq-group">
+			<li class="cd-faq-title"><h2>How to use Paytential</h2></li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">How does syncing work?</a>
+				<div class="cd-faq-content">
+				<p>Once an employye and his information is inputted, the data will be stored in our database. From there, the employees will automatically appear on the managers dashboard allowing for the ability to quickly access that individuals personnel page.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">How do I upload things from my phone or tablet?</a>
+				<div class="cd-faq-content">
+					<p>Luckily, Payntential is a fully responsive application. Everything should function the same on all devices.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+		</ul> <!-- cd-faq-group -->
+
+		<ul id="account" class="cd-faq-group">
+			<li class="cd-faq-title"><h2>Account</h2></li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">How do I delete my account?</a>
+				<div class="cd-faq-content">
+					<p>Under Settings, click on My Account. From there, at the bottom of the screen there will be an option allowing you to delete your account. You will be asked to re-enter your current password.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">How do I change my account settings?</a>
+				<div class="cd-faq-content">
+					<p>Under Settings, there's a link called My Account. From there you will be able to access the accounts settings and do as you wish.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">I forgot my password. How do I reset it?</a>
+				<div class="cd-faq-content">
+					<p>When your at the log-in, there's an option labeled 'Forgot Password' at the bottom right of the pop-up window that allows you to send yourself an e-mail with your password. You will have to answer a few security questions you answered when first creating the account. </p>
+				</div> <!-- cd-faq-content -->
+			</li>
+		</ul> <!-- cd-faq-group -->
+
+		<ul id="payments" class="cd-faq-group">
+			<li class="cd-faq-title"><h2>Other</h2></li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">Can I have an invoice for my subscription?</a>
+				<div class="cd-faq-content">
+					<p>The invoice will be included in the payment you make to Paylocity.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">Why does my bank statement show multiple charges for one upgrade?</a>
+				<div class="cd-faq-content">
+					<p>Upgrading to a premium account after the initial creation of the account will simply charge the customer twice. One for the basic charge of the paytential app, and again for the premium service. If one opts for the premium service from the creation of the account, the value will be included in the yearly charge.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+		</ul> <!-- cd-faq-group -->
+	</div> <!-- cd-faq-items -->
+	<a href="#0" class="cd-close-panel">Close</a>
+</section> <!-- cd-faq -->
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/jquery.mobile.custom.min.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+</body>
+</html>
