@@ -21,11 +21,12 @@ body {
   font-size: 16px;
   cursor: pointer;
   transition: 0.3s;
+  width: 25px;
 }
 @media (min-width: 768px) {
 body {
   padding-top: 60px;
-  margin-right:-20px;
+  margin-right:-200px;
   margin-top:20px;
   overflow-x:hidden;
 }
@@ -125,6 +126,13 @@ body {
   margin-bottom: 30px;
   text-align: center;
 }
+@media (min-width: 768px) {
+.placeholders {
+  margin-bottom: 30px;
+  text-align: center;
+  width:85vw;
+}
+}
 .placeholders h4 {
   margin-bottom: 0;
 }
@@ -137,8 +145,9 @@ body {
 }
 
 #dashboard{
-margin-top:30px;
+margin-top:80px;
 }
+
 @media (min-width: 768px) {
 #dashboard{
 margin-left:-30px;
@@ -153,10 +162,8 @@ margin-left:-30px;
 .nav-sidebar a {
 text-decoration: none;
 }
-
-.navbar-brand img{
-position:relative;
-top:-8px;
+.navbar-header{
+  
 }
 
 @media (min-width: 768px) {
@@ -170,7 +177,8 @@ margin:auto;
 #box{
 float:left;
 justify-content:center;
-margin-top:17vw;
+margin-top:20vw;
+width:100vw;
 
 }
 
@@ -184,6 +192,10 @@ margin-top:17vw;
 }
 }
 
+#pot{
+  display:none;
+}
+
 @media (min-width: 768px) {
 #pot{ 
 
@@ -195,15 +207,22 @@ margin-top:17vw;
 
 }
 #performance{
+display:none;
+}
+
+@media (min-width: 768px) {
+#performance{
 margin-top:35px;
 width:15px;
 float:left;
 font-weight:bolder;
 }
 
+}
+
 
 .rowBig {
-    height:17vw;
+    height:20vw;
 
 }
 
@@ -216,8 +235,8 @@ font-weight:bolder;
   padding:10px;
       background-color: #FFee7e;
 border:solid black 1px;
-      height:17vw;
-      width:17vw;  
+      height:20vw;
+      width:20vw;  
 } 
 @media (min-width: 768px) {
 #subBox1 {
@@ -233,8 +252,8 @@ border:solid black 1px;
   padding:10px;
       background-color: #3dc270;
 border:solid black 1px;
-      height:17vw;
-      width:17vw;  
+      height:20vw;
+      width:20vw;  
 } 
 @media (min-width: 768px) {
 
@@ -253,8 +272,8 @@ border:solid black 1px;
   padding:10px;
       background-color: #3dc270;
 border:solid black 1px;
-      height:17vw;
-      width:17vw;  
+      height:20vw;
+      width:20vw;  
 }
 
 
@@ -276,8 +295,8 @@ border:solid black 1px;
   padding:10px;
       background-color: #e35e6b;
 border:solid black 1px;
-      height:17vw;
-      width:17vw;  
+      height:20vw;
+      width:20vw;  
 }
 
 @media (min-width: 768px) {
@@ -297,8 +316,8 @@ border:solid black 1px;
   padding:10px;
       background-color: #FFee7e;
 border:solid black 1px;
-      height:17vw;
-      width:17vw;  
+      height:20vw;
+      width:20vw;  
 } 
 
 @media (min-width: 768px) {
@@ -318,8 +337,8 @@ border:solid black 1px;
   padding:10px;
       background-color: #3dc270;
 border:solid black 1px;
-      height:17vw;
-      width:17vw;  
+      height:20vw;
+      width:20vw;  
 }
 
 @media (min-width: 768px) {
@@ -339,8 +358,8 @@ border:solid black 1px;
   padding:10px;
       background-color: #e35e6b;
 border:solid black 1px;
-      height:17vw;
-      width:17vw;  
+      height:20vw;
+      width:20vw;  
 } 
 
 @media (min-width: 768px) {
@@ -360,8 +379,8 @@ border:solid black 1px;
   padding:10px;
       background-color: #e35e6b;
 border:solid black 1px;
-      height:17vw;
-      width:17vw;}
+      height:20vw;
+      width:20vw;}
 @media (min-width: 768px) {
 
 
@@ -379,8 +398,8 @@ border:solid black 1px;
   padding:10px;
       background-color: #FFee7e;
 border:solid black 1px;
-      height:17vw;
-      width:17vw;  
+      height:20vw;
+      width:20vw;  
 } 
 
 @media (min-width: 768px) {
@@ -399,7 +418,6 @@ border:solid black 1px;
 #NINE{
   height:1vw;
   margin-top:5px;
-  width:100vw;
 }
 h4 {
   font-size:20;
@@ -482,11 +500,17 @@ display:none;
   display:none;
 }
 .my-info-1{
-  
+  display:none;
+}
+@media (min-width: 768px) {
+.my-info-1{
+  display:block;
   height:200px;
   width:126px;
   border:2px solid black;
 }
+}
+
 .hide {
   display: none;
 }
@@ -494,6 +518,32 @@ display:none;
   
   position: relative;
   top:-50px;
-  left:35px;
+  left:50px;
   
+}
+.div-toggle{
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .div-toggle{ 
+    display:block;
+  }
+  
+}
+
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header{
+  margin:auto;
+}
+#logo {
+    position: relative;
+    top: -50px;
+    left: -10px;
+}
+@media (min-width: 768px) {
+  #logo {
+    position: relative;
+    top:-50px;
+    left: 32px;
+}
 }
