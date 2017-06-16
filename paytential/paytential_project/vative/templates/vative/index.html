@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+
+  <head>
+      	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css"  href="{% static "vative/css/stylesheet.css" %}"/>
+  </head>
+  <body>
+
+<nav class="navbar fixed-top navbar-light bg-faded">
+  <div class="navbar-header">
+      <div class="container-fluid">
+
+
+          <a class="navbar-brand" href ="https://www.paylocity.com/"><img src="https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_1492785654/paylocity.png" id ="toplogo" /> </a>
+
+        <ul class="nav navbar-nav navbar-center">
+            <li><img src="https://cdn.onelogin.com/images/icons/square/paylocity-webpay/portal_big_2x.png?1427292875" width="80" height="80" /></li>
+        </ul>
+        <div id ="rightnav">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="help-page.html" >Help</a></li>
+           <li><a href="#"data-toggle="modal" data-target="#register-modal">Register</a></li>
+          <li><a href="#"data-toggle="modal" data-target="#login-modal">Log In</a></li>
+        </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container-fluid">
+    <div class="parallax">
+  <img src="{% static "vative/images/paytentiallogo2.png" %}" id ="logo" />
+  <div id= "description">
+  <h2>Connect compensation with performance. Make smart, data-driven decisions about how to reward employees.</h2>
+  </div>
+  </div>
+  </div>
+    </div>
+    <div class="jumbotron" id ="toptop">
+          <p>Potential and performance are two words that often go together
+          although there is a key difference between these two words.
+          Potential refers to the capabilities of an individual that
+          can be developed. On the other hand, performance refers to
+          completing various tasks that have been assigned to the
+          individual. In the working environment, employees who have
+          high potential are able to perform at a higher level than other
+          employees. But does the same rule apply to high performers as well?
+          It is in this context that the key difference between potential and
+          performance emerge. In most situations, although high potential
+          guarantees high performance, high performance does not guarantee
+          high potential. This article aims at elaborating this difference further.
+          </p>
+</div>
+        <div class="parallax2">
+        </div>
+
+<div class="learn-more">
+	  <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-4 col-md-4">
+			    <h3>Potential</h3>
+			    <p>Having or showing the capacity to become or develop into something in the future.</p>
+	      </div>
+    <div class="col-sm-4 col-md-4">
+		        <h3>Performance</h3>
+                <p>The action or process of carrying out or accomplishing an action, task, or function.</p>
+		  </div>
+    <div class="col-sm-4 col-md-4">
+			<h3>Tracking</h3>
+			    <p>From Verified ID to our worldwide customer support team, we've got your back.</p>
+		  </div>
+	    </div>
+
+	    </div>
+	     <div class="jumbotron" id = "second">
+          <h2>HERE WE BELIEVE IN THE POWER OF POTENTIAL</h2>
+    </div>
+<div class="container">
+	<div class="row">
+	</div>
+</div>
+
+
+<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    	<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+				    <img src="{% static "vative/images/paytentiallogo2.png" %}" />
+				    					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+					</button>
+				</div>
+
+                <div id="div-forms">
+                    <form id="login-form">
+		                <div class="modal-body">
+				    		<div id="div-login-msg">
+                                <div id="icon-login-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                <span id="text-login-msg">Type your username and password.</span>
+                            </div>
+				    		<input id="login_username" class="form-control" type="text" placeholder="Username" required>
+				    		<input id="login_password" class="form-control" type="password" placeholder="Password" required>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Remember me
+                                </label>
+                            </div>
+        		    	</div>
+				        <div class="modal-footer">
+                            <div>
+                              <!-- This is the Log-In Button within the login model  -->
+                                <button type="submit" class="btn btn-primary btn-lg btn-block" ><a href ="dashboard.html">Login </a></button>
+                            </div>
+				    	    <div>
+
+                                <button id="login_lost_btn" type="button" class="btn btn-link">Forgot Password?</button>
+                            </div>
+				        </div>
+                    </form>
+                    <form id="lost-form" style="display:none;">
+    	    		    <div class="modal-body">
+		    				<div id="div-lost-msg">
+                                <div id="icon-lost-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                <span id="text-lost-msg">Type your e-mail.</span>
+                            </div>
+		    				<input id="lost_email" class="form-control" type="text" placeholder="E-Mail" required>
+            			</div>
+		    		    <div class="modal-footer">
+                            <div>
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">Send</button>
+                            </div>
+                            <div>
+                                <button id="lost_login_btn" type="button" class="btn btn-link">Log In </button>
+
+                            </div>
+		    		    </div>
+                    </form>
+                    <form id="register-form" style="display:none;">
+            		    <div class="modal-body">
+		    				<div id="div-register-msg">
+                                <div id="icon-register-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                <span id="text-register-msg">Register an account.</span>
+                            </div>
+                            <input id="login_username" class="form-control" type="text" placeholder="Username" >
+				<input id="login_password" class="form-control" type="password" placeholder="Password" >
+                <input type="password" class= "form-control" name="password" placeholder="Confirm password">
+                <input type="password" class= "form-control" name="manager id" placeholder="Manager Id">
+            			</div>
+		    		    <div class="modal-footer">
+                            <div>
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">Register</button>
+                            </div>
+                            <div>
+                                <button id="register_login_btn" type="button" class="btn btn-link">Log In</button>
+                                <button id="login_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
+                            </div>
+		    		    </div>
+                    </form>
+                </div>
+                           </div>
+                           </div>
+	</div>
+
+<div class="modal fade" id="register-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    	<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header" >
+				    <img src= "{% static "vative/images/paytentiallogo2.png" %}" />
+				    					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+					</button>
+
+				</div>
+
+                <div id="div-forms">
+                    <form id="login-form">
+		                <div class="modal-body">
+				    		<div id="div-login-msg">
+                                <div id="icon-login-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                <span id="text-login-msg">Register an account.</span>
+                            </div>
+				<input id="login_username" class="form-control" type="text" placeholder="Username" >
+				<input id="login_password" class="form-control" type="password" placeholder="Password" >
+                <input type="password" class= "form-control" name="password" placeholder="Confirm password">
+                <input type="password" class= "form-control" name="manager id" placeholder="Manager Id">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Remember me
+                                </label>
+                            </div>
+        		    	</div>
+				        <div class="modal-footer">
+                            <div>
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">Register</button>
+                            </div>
+
+				        </div>
+                    </form>
+                    <form id="lost-form" style="display:none;">
+    	    		    <div class="modal-body">
+		    				<div id="div-lost-msg">
+                                <div id="icon-lost-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                <span id="text-lost-msg">Enter your e-mail.</span>
+                            </div>
+		    				<input id="lost_email" class="form-control" type="text" placeholder="E-Mail" required>
+            			</div>
+		    		    <div class="modal-footer">
+                            <div>
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">Send</button>
+                            </div>
+                            <div>
+                                <button id="lost_login_btn" type="button" class="btn btn-link">Log In</button>
+                                <button id="lost_register_btn" type="button" class="btn btn-link">Register</button>
+                            </div>
+		    		    </div>
+                    </form>
+                    <form id="register-form" style="display:none;">
+            		    <div class="modal-body">
+		    				<div id="div-register-msg">
+                                <div id="icon-register-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                <span id="text-register-msg">Register an account.</span>
+                            </div>
+		    				<input id="register_username" class="form-control" type="text" placeholder="Username" required>
+                            <input id="register_email" class="form-control" type="text" placeholder="E-Mail" required>
+                            <input id="register_password" class="form-control" type="password" placeholder="Password" required>
+            			</div>
+		    		    <div class="modal-footer">
+                            <div>
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">Register</button>
+                            </div>
+                            <div>
+                                <button id="register_login_btn" type="button" class="btn btn-link">Log Infasfndsgkjasfgjansfgoiasngfpi</button>
+                                <button id="register_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
+                            </div>
+		    		    </div>
+                    </form>
+                </div>
+                           </div>
+                           </div>
+	</div>
+	<footer class="footer-bs">
+        <div class="row">
+        	<div class="col-md-3 footer-brand animated fadeInLeft">
+            	            <img src="https://www.qualys.com/asset/image/logo/paylocity-500.png" ></a></li>
+
+                <p></p>
+            </div>
+        	<div class="col-md-3 footer-nav animated fadeInUp">
+            	<h4>Menu </h4>
+            	<div class="col-md-6">
+                    <ul class="list">
+                        <li><a href="https://www.paylocity.com/about/">About Us</a></li>
+                        <li><a href="https://www.paylocity.com/contact/">Contacts</a></li>
+                        <li><a href="https://www.paylocity.com/privacy/">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        	<div class="col-md-2 footer-social animated fadeInDown">
+            	<h4>Follow Us</h4>
+            	<ul>
+                	<li><a href="https://www.facebook.com/Paylocity/">Facebook</a></li>
+                	<li><a href="https://twitter.com/paylocity?lang=en">Twitter</a></li>
+                	<li><a href="https://www.instagram.com/explore/locations/120947282/">Instagram</a></li>
+                </ul>
+            </div>
+        	<div class="col-md-3 footer-ns animated fadeInRight">
+            	<BR>
+            	<BR>
+            	 <BR>
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Search for...">
+                      <span class="input-group-btn">
+                        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope"></span></button>
+                      </span>
+                    </div>
+                    <BR>
+                    <BR>
+
+                 </p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+/* #####################################################################
+   #
+   #   Project       : Modal Login with jQuery Effects
+   #   Author        : Rodrigo Amarante (rodrigockamarante)
+   #   Version       : 1.0
+   #   Created       : 07/29/2015
+   #   Last Change   : 08/04/2015
+   #
+   ##################################################################### */
+
+$(function() {
+
+    var $formLogin = $('#login-form');
+    var $formLost = $('#lost-form');
+    var $formRegister = $('#register-form');
+    var $divForms = $('#div-forms');
+    var $modalAnimateTime = 300;
+    var $msgAnimateTime = 150;
+    var $msgShowTime = 2000;
+    $("form").submit(function () {
+        switch(this.id) {
+            case "login-form":
+                var $lg_username=$('#login_username').val();
+                var $lg_password=$('#login_password').val();
+                if ($lg_username == "ERROR") {
+                    msgChange($('#div-login-msg'), $('#icon-login-msg'), $('#text-login-msg'), "error", "glyphicon-remove", "Login error");
+                } else {
+                    msgChange($('#div-login-msg'), $('#icon-login-msg'), $('#text-login-msg'), "success", "glyphicon-ok", "Login OK");
+                }
+                return false;
+                break;
+            case "lost-form":
+                var $ls_email=$('#lost_email').val();
+                if ($ls_email == "ERROR") {
+                    msgChange($('#div-lost-msg'), $('#icon-lost-msg'), $('#text-lost-msg'), "error", "glyphicon-remove", "Send error");
+                } else {
+                    msgChange($('#div-lost-msg'), $('#icon-lost-msg'), $('#text-lost-msg'), "success", "glyphicon-ok", "Send OK");
+                }
+                return false;
+                break;
+            case "register-form":
+                var $rg_username=$('#register_username').val();
+                var $rg_email=$('#register_email').val();
+                var $rg_password=$('#register_password').val();
+                if ($rg_username == "ERROR") {
+                    msgChange($('#div-register-msg'), $('#icon-register-msg'), $('#text-register-msg'), "error", "glyphicon-remove", "Register error");
+                } else {
+                    msgChange($('#div-register-msg'), $('#icon-register-msg'), $('#text-register-msg'), "success", "glyphicon-ok", "Register OK");
+                }
+                return false;
+                break;
+            default:
+                return false;
+        }
+        return false;
+    });
+
+    $('#login_register_btn').click( function () { modalAnimate($formLogin, $formRegister) });
+    $('#register_login_btn').click( function () { modalAnimate($formRegister, $formLogin); });
+    $('#login_lost_btn').click( function () { modalAnimate($formLogin, $formLost); });
+    $('#lost_login_btn').click( function () { modalAnimate($formLost, $formLogin); });
+    $('#lost_register_btn').click( function () { modalAnimate($formLost, $formRegister); });
+    $('#register_lost_btn').click( function () { modalAnimate($formRegister, $formLost); });
+
+    function modalAnimate ($oldForm, $newForm) {
+        var $oldH = $oldForm.height();
+        var $newH = $newForm.height();
+        $divForms.css("height",$oldH);
+        $oldForm.fadeToggle($modalAnimateTime, function(){
+            $divForms.animate({height: $newH}, $modalAnimateTime, function(){
+                $newForm.fadeToggle($modalAnimateTime);
+            });
+        });
+    }
+
+    function msgFade ($msgId, $msgText) {
+        $msgId.fadeOut($msgAnimateTime, function() {
+            $(this).text($msgText).fadeIn($msgAnimateTime);
+        });
+    }
+
+    function msgChange($divTag, $iconTag, $textTag, $divClass, $iconClass, $msgText) {
+        var $msgOld = $divTag.text();
+        msgFade($textTag, $msgText);
+        $divTag.addClass($divClass);
+        $iconTag.removeClass("glyphicon-chevron-right");
+        $iconTag.addClass($iconClass + " " + $divClass);
+        setTimeout(function() {
+            msgFade($textTag, $msgOld);
+            $divTag.removeClass($divClass);
+            $iconTag.addClass("glyphicon-chevron-right");
+            $iconTag.removeClass($iconClass + " " + $divClass);
+  		}, $msgShowTime);
+    }
+});
+</script>
+</html>
