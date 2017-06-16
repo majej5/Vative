@@ -4,14 +4,16 @@ body{
 .nav{
   display: inline;
   position: relative;
-  top:-5px;
+  top:-35px;
   height:110px;
 }
 
 #toplogo{
 position:relative;
 left:-50px;
+top:-30px;
 height:110px;
+
 
 }
 
@@ -83,7 +85,8 @@ height:110px;
 }
 .navbar-center{
 position: relative;
-left:285px !important;
+left:265px !important;
+margin-top:-35px;
 }
 
 .parallax{
@@ -290,4 +293,8 @@ margin-bottom: 10px;
   position: relative;
   top:30px;
   left:375px;
+}
+.navbar-header{
+height:70px;
+
 }
