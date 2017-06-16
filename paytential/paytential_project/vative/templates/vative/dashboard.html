@@ -1,319 +1,551 @@
 <!DOCTYPE html>
 {% load staticfiles %}
 <html lang="en">
- <head>
+  <head>
 
-   <meta charset="utf-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="icon" href="https://cdn.onelogin.com/images/icons/square/paylocity-webpay/portal_big_2x.png?1427292875" >
-   <script src="{% static "vative/js/jquery-3.2.1.min.js" %}"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://cdn.onelogin.com/images/icons/square/paylocity-webpay/portal_big_2x.png?1427292875" >
 
-   <title>Paytentital</title>
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <title>Paytentital</title>
+	  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<link rel="stylesheet" type="text/css"  href="{% static "vative/css/dashStyle.css" %}"/>
+  <script src="{% static "vative/js/jquery-3.2.1.min.js" %}"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css"  href="{% static "vative/css/dashStyle.css" %}"/>
 
-   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-   <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-   <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
- </head>
- <body>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+  </head>
+  <body>
 
-   <nav class="navbar navbar-inverse navbar-fixed-top">
-     <div class="container-fluid">
-       <div class="navbar-header">
-         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-           <span class="sr-only">Toggle navigation</span>
-           <span class="icon-bar"></span>
-           <span class="icon-bar"></span>
-           <span class="icon-bar"></span>
-         </button>
-         <a class="navbar-brand" href="#"><img src="{% static "vative/images/paytentiallogo2.png" %}" id ="logo" width="300" height="160" /> </a>
-       </div>
-       <div id="navbar" class="navbar-collapse collapse">
-         <ul class="nav navbar-nav navbar-right">
-           <li><a href="#">Dashboard</a></li>
-           <li><a href="#">Settings</a></li>
-           <li><a href="#">Profile</a></li>
-           <li><a href="#">Help</a></li>
-   </nav>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="{% static "vative/images/paytentiallogo2.png" %}" id ="logo" width="300" height="160" /> </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="http://127.0.0.1:8000/vative/">Log Out</a></li>
+    </nav>
 
-   <div class="container-fluid">
-     <div class="row">
-       <div class="col-sm-3 col-md-2 sidebar">
-   <div id="sidebar-wrapper">
-   <div class="sidebar-nav">
-           <a class="active" href="#">Overview <span class="sr-only">(current)</span></a>
-           <a href="#">Reports</a>
-           <a href="#">Analytics</a>
-           <a href="myPrint()">Export</a>
-   </div>
-   </div>
-       </div>
-       <div class="col-sm-12 col-md-10" id="dashboard">
-         <h1 class="page-header">Dashboard</h1>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+		<div id="sidebar-wrapper">
+		<div class="sidebar-nav">
+            <a class="active" href="#">Overview <span class="sr-only">(current)</span></a>
+            <a href="#">Reports</a>
+            <a href="#">Analytics</a>
+            <a href="myPrint()">Export</a>
+		</div>
+		</div>
+        </div>
+        <div class="col-sm-12 col-md-10" id="dashboard">
+          <h1 class="page-header">Dashboard</h1>
 
-         <div class="row placeholders">
-           <div class="col-xs-6 col-sm-3 placeholder">
-             <img src="https://cdn.onelogin.com/images/icons/square/paylocity-webpay/portal_big_2x.png?1427292875" width="75" height="75" class="img-responsive" alt="Generic placeholder thumbnail">
-             <h4>Mauricio</h4>
-             <span class="text-muted">Top Employee</span>
-           </div>
-           <div class="col-xs-6 col-sm-3 placeholder">
+          <div class="row placeholders">
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <img src="https://cdn.onelogin.com/images/icons/square/paylocity-webpay/portal_big_2x.png?1427292875" width="75" height="75" class="img-responsive" alt="Generic placeholder thumbnail">
+              <h4>Mauricio</h4>
+              <span class="text-muted">Top Employee</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
 <img src="https://cdn.onelogin.com/images/icons/square/paylocity-webpay/portal_big_2x.png?1427292875" width="75" height="75" class="img-responsive" alt="Generic placeholder thumbnail">
 <h4>Devonte</h4>
-             <span class="text-muted">Top Employee</span>
-           </div>
-           <div class="col-xs-6 col-sm-3 placeholder">
+              <span class="text-muted">Top Employee</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
 <img src="https://cdn.onelogin.com/images/icons/square/paylocity-webpay/portal_big_2x.png?1427292875" width="75" height="75" class="img-responsive" alt="Generic placeholder thumbnail">
-             <h4>Endre</h4>
-             <span class="text-muted">Top Employee</span>
-           </div>
-           <div class="col-xs-6 col-sm-3 placeholder">
+              <h4>Endre</h4>
+              <span class="text-muted">Top Employee</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
 <img src="https://cdn.onelogin.com/images/icons/square/paylocity-webpay/portal_big_2x.png?1427292875" width="75" height="75" class="img-responsive" alt="Generic placeholder thumbnail">
-             <h4>Semaje</h4>
-             <span class="text-muted">Top Employee</span>
-           </div>
-         </div>
+              <h4>Semaje</h4>
+              <span class="text-muted">Top Employee</span>
+            </div>
+          </div>
 
-         <h2 class="sub-header">Nine Grid</h2>
+          <h2 class="sub-header">Nine Grid</h2>
 
-         <div class="table-responsive">
-             <div class="col-xs-2 col-sm-2 " id="NINE">
-               <h3 id="manager">Manager List</h3>
+          <div class="table-responsive">
+              <div class="col-xs-2 col-sm-2 " id="NINE">
+                <h3 id="manager">Manager List</h3>
 
 <select class="div-toggle" data-target=".my-info-1">
- <option value="Mauricio Vargas" data-show=".citrus">Mauricio Vargas</option>
- <option value="Endre Roman" data-show=".pome">Endre Roman</option>
+  <option value="Mauricio Vargas" data-show=".citrus">Mauricio Vargas</option>
+  <option value="Endre Roman" data-show=".pome">Endre Roman</option>
 </select>
 
 <div class="my-info-1">
- <div class="citrus hide">
-   <ul id="employee_list">
-   </ul>
- </div>
- <div class="pome hide">
-   <ul>
-     <li><a href="#">Steve</a></li>
-     <li>Mike</li>
-     <li>Fabio</li>
-     <li>James</li>
-   </ul>
-   </div>
-</div>
- <input type="text" id="myInput" placeholder="Add Manager...">
- <span onclick="newElement()" class="addBtn">Add</span>
- </div>
- <div class="col-xs-9 col-sm-9">
-     <div id="performance">
-<p>P</p><p>O</p><p>T</p><p>E</p><p>N</p><p>T</p><p>I</p><p>A</p><p>L</p>
+  <div class="citrus hide">
+    <ul>
+      <li><a href "#">Steve</a></li>
+      <li>Mike</li>
+      <li>Fabio</li>
+      <li>Roger</li>
+      <li>Nora</li>
+      <li>James</li>
+    </ul>
   </div>
-<!--- GRID --------->
-   <div class="container" id="box">
+  <div class="pome hide">
+    <ul>
+      <li><a href="#">Steve</a></li>
+      <li>Mike</li>
+      <li>Fabio</li>
+      <li>James</li>
+    </ul>
+    </div>
+</div>
+  <input type="text" id="myInput" placeholder="Add Manager...">
+  <span onclick="newElement()" class="addBtn" id="addBtn">Add</span>
+  </div>
+  <div class="col-xs-9 col-sm-9" id="super">
+		  <div id="performance">
+<p>P</p><p>O</p><p>T</p><p>E</p><p>N</p><p>T</p><p>I</p><p>A</p><p>L</p>
+   </div>
+<!---- GRID --------->
+    <div class="container" id="box">
 
 
 <!--ROW 1-->
- <div class="row rowBig" id="box1">
+  <div class="row rowBig" id="box1">
 
- <a href="" data-toggle="tooltip" data-placement="top" title="High Potential Low Performance">
-   <div class="col box" id="subBox1" >
-   <img src="https://cdn.onelogin.com/images/icons/square/paylocity-webpay/portal_big_2x.png?1427292875" width="50" height="50" />
- <p id="z1"></p>
-   </div>
-   </a>
+    <div class="col box" id="subBox1" >
+    <a href="" data-toggle="tooltip" data-placement="top" title="High Potential Low Performance"></a>
+    <a href = "personal.html">
+    </head><img src="https://cdn.onelogin.com/images/icons/square/paylocity-webpay/portal_big_2x.png?1427292875" width="50" height="50" />
+  <p id="z1"></p>
+  </a>
+    </div>
+
+
+        <a href="" data-toggle="tooltip" data-placement="top" title="High Potential Moderate Performance">
+    <div class="col box" id="subBox2">
+      <h4></h4>
+	  <a href="index.html" title="High Potential High Performance"> <img src="https://cdn.onelogin.com/images/icons/square/paylocity-webpay/portal_big_2x.png?1427292875" width="50" height="50"/>
+      <p id="z2"></p>
+      </div>
+      </a>
+
+          <a href="" data-toggle="tooltip" data-placement="top" title="High Potential High Performance">
+
+    <div class="col box" id="subBox3">
+      <h4></h4>
+            <p id="z3"> </p>
+     </div>
+     </a>
+  </div>
+<!--ROW 2 -->
+<a href="" data-toggle="tooltip" data-placement="top" title="Moderate Potential Low Performance">
+   <div class="row rowBig" id="box2">
+    <div class="col box" id="subBox4">
+      <h4></h4>
+            <p id="z4"> </p>
+
+    </div>
+    </a>
+
+       <a href="" data-toggle="tooltip" data-placement="top" title="Moderate Potential Moderate Performance">
+    <div class="col box" id="subBox5">
+      <h4></h4>
+            <p id="z5"></p>
+          </div>
+          </a>
 
        <a href="" data-toggle="tooltip" data-placement="top" title="High Potential Moderate Performance">
-   <div class="col box" id="subBox2">
-     <h4></h4>
-     <p id="z2"></p>
+    <div class="col box" id="subBox6">
+      <h4></h4>
+            <p id="z6"> </p>
      </div>
      </a>
 
-         <a href="" data-toggle="tooltip" data-placement="top" title="High Potential High Performance">
-
-   <div class="col box" id="subBox3">
-     <h4></h4>
-           <p id="z3"> </p>
-    </div>
-    </a>
- </div>
-<!--ROW 2 -->
-<a href="" data-toggle="tooltip" data-placement="top" title="Moderate Potential Low Performance">
-  <div class="row rowBig" id="box2">
-   <div class="col box" id="subBox4">
-     <h4></h4>
-           <p id="z4"> </p>
-
-   </div>
-   </a>
-
-      <a href="" data-toggle="tooltip" data-placement="top" title="Moderate Potential Moderate Performance">
-   <div class="col box" id="subBox5">
-     <h4></h4>
-           <p id="z5"></p>
+  </div>
+<!--ROW 3-->
+   <div class="row rowBig" id="box3">
+   <a href="" data-toggle="tooltip" data-placement="top" title="Low Potential Low Performance">
+    <div class="col box" id="subBox7">
+      <h4></h4>
+      <p id="z7"> </p>
          </div>
          </a>
 
-      <a href="" data-toggle="tooltip" data-placement="top" title="High Potential Moderate Performance">
-   <div class="col box" id="subBox6">
-     <h4></h4>
-           <p id="z6"> </p>
+
+
+     <a href="" data-toggle="tooltip" data-placement="top" title="Low Potential Moderate Performance">
+    <div class="col box" id="subBox8">
+      <h4></h4>
+          <p id="z8"> </p>
     </div>
     </a>
-
- </div>
-<!--ROW 3-->
-  <div class="row rowBig" id="box3">
-  <a href="" data-toggle="tooltip" data-placement="top" title="Low Potential Low Performance">
-   <div class="col box" id="subBox7">
-     <h4></h4>
-     <p id="z7"> </p>
+    <a href="" data-toggle="tooltip" data-placement="top" title="Low Potential High Performance">
+    <div class="col box" id="subBox9">
+      <h4></h4>
+        <p id="z9"></p>
+    </div>
+    </a>
+  </div>
+  <p id="pot" >PERFORMANCE</p>
+  </div>
+  </div>
+  </div>
+          </div>
         </div>
-        </a>
-
-
-
-    <a href="" data-toggle="tooltip" data-placement="top" title="Low Potential Moderate Performance">
-   <div class="col box" id="subBox8">
-     <h4></h4>
-         <p id="z8"> </p>
-   </div>
-   </a>
-   <a href="" data-toggle="tooltip" data-placement="top" title="Low Potential High Performance">
-   <div class="col box" id="subBox9">
-     <h4></h4>
-       <p id="z9"></p>
-   </div>
-   </a>
- </div>
- <p id="pot" >PERFORMANCE</p>
- </div>
- </div>
- </div>
-         </div>
-       </div>
-     </div>
-   </div>
-
-   <script>var emp =
+      </div>
+    </div>
+	<script>var emp0 =
+        {
+          employee_id: 0,
+          first_name: "Stone",
+          last_name: "Holt",
+          manager_id: 0,
+          operational_unit: 0,
+          performance_rating: 3,
+          potential_rating: 2,
+          assignment: "Bus"
+        }
+      </script>
+      <script>var emp1 =
+      {
+      employee_id: 1,
+      first_name: "Mccarty",
+      last_name: "Huffman",
+      manager_id: 1,
+      operational_unit: 1,
+      performance_rating: 3,
+      potential_rating: 3,
+      assignment: "Bus"
+    }
+     </script>
+     <script>var emp2 =
      {
-       employee_id: 0,
-       first_name: "Stone",
-       last_name: "Holt",
-       manager_id: 0,
-       operational_unit: 0,
-       performance_rating: 3,
+          employee_id: 2,
+          first_name: "Sharpe",
+          last_name: "Crosby",
+          manager_id: 2,
+          operational_unit: 2,
+          performance_rating: 2,
+          potential_rating: 1,
+          assignment: "Adm"
+        }
+     </script>
+       <script>var emp3 =
+       {
+         employee_id: 3,
+         first_name: "Abby",
+         last_name: "Deleon",
+         manager_id: 3,
+         operational_unit: 3,
+         performance_rating: 1,
+         potential_rating: 2,
+         assignment: "Mgm"
+       }
+         </script>
+         <script>var emp4 =
+         {
+           employee_id: 4,
+           first_name: "Oneill",
+           last_name: "Bernard",
+           manager_id: 4,
+           operational_unit: 4,
+           performance_rating: 3,
+           potential_rating: 1,
+           assignment: "Bus"
+         }
+           </script>
+           <script>var emp5 =
+           {
+          employee_id: 5,
+          first_name: "Margaret",
+          last_name: "Mcfarland",
+          manager_id: 5,
+          operational_unit: 5,
+          performance_rating: 3,
+          potential_rating: 1,
+          assignment: "Mgm"
+        }
+          </script>
+          <script>var emp6 =
+          {
+      employee_id: 6,
+       first_name: "Webb",
+       last_name: "Gutierrez",
+       manager_id: 6,
+       operational_unit: 6,
+       performance_rating: 2,
+       potential_rating: 1,
+       assignment: "Mgm"
+     }
+          </script>
+          <script>var emp7 =
+          {
+     employee_id: 7,
+     first_name: "Reilly",
+     last_name: "Mccoy",
+     manager_id: 7,
+     operational_unit: 7,
+     performance_rating: 1,
+     potential_rating: 1,
+     assignment: "Adm"
+   }
+            </script>
+        <script>var emp8 =
+        {
+          employee_id: 8,
+          first_name: "Yang",
+          last_name: "Spears",
+          manager_id: 8,
+          operational_unit: 8,
+          performance_rating: 2,
+          potential_rating: 1,
+          assignment: "Bus"
+        }
+              </script>
+              <script>var emp9 =
+      {
+       employee_id: 9,
+       first_name: "Lacey",
+       last_name: "Lancaster",
+       manager_id: 9,
+       operational_unit: 9,
+       performance_rating: 2,
        potential_rating: 2,
-       assigment: "Bus"
-     };
-   </script>
- </body>
-   <script src="../../dist/js/bootstrap.min.js"></script>
-   <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-   <script src="../../assets/js/vendor/holder.min.js"></script>
-   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-   <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+       assignment: "Adm"
+     }
+                </script>
+        <script>var emp10 =
+        {
+       employee_id: 10,
+       first_name: "Consuelo",
+       last_name: "Thompson",
+       manager_id: 10,
+       operational_unit: 10,
+       performance_rating: 3,
+       potential_rating: 3,
+       assignment: "Bus"
+     },
+               </script>
+               <script>var emp11 =
+               {
+       employee_id: 11,
+       first_name: "Woodward",
+       last_name: "Walker",
+       manager_id: 11,
+       operational_unit: 11,
+       performance_rating: 3,
+       potential_rating: 1,
+       assignment: "Adm"
+     }
+               </script>
+               <script>var emp12 =
+               {
+       employee_id: 12,
+       first_name: "Judy",
+       last_name: "Saunders",
+       manager_id: 12,
+       operational_unit: 12,
+       performance_rating: 1,
+       potential_rating: 3,
+       assignment: "Bus"
+     }
+                 </script>
+
+
+  </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+	 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 </script>
 <script>
-/* add in logic here */
-/* user data
-note that pValue is set for the performance Value of the individual
-this annotates the first value in the set of (3-3,3-2,3-1) where 3 is the pValue
-and 3,2,1 are the "zones"
-*/
 
- var boxes = document.getElementsByClassName("box")
+
+var user1 = {
+
+    firstName: "Tony",
+    lastName: "Stark",
+    pValue: 3,
+    zone: 3
+    }
+var user2 = {
+
+    firstName: "Thor",
+    lastName: "Odin",
+    pValue: 3,
+    zone: 2
+    }
+var user3 = {
+
+    firstName: "Bruce",
+    lastName: "Banner",
+    pValue: 3,
+    zone: 1
+    }
+    var user4 = {
+
+    firstName: "John",
+    lastName: "Rodgers",
+    pValue: 1,
+    zone: 3
+    }
+    var user5 = {
+
+    firstName: "Peter",
+    lastName: "Parker",
+    pValue: 1,
+    zone: 2
+    }
+    var user6 = {
+
+    firstName: "Charles",
+    lastName: "Xavier",
+    pValue: 1,
+    zone: 1
+    }
+    var user7 = {
+
+    firstName: "Tasha",
+    lastName: "Romanov",
+    pValue: 2,
+    zone: 3
+    }
+    var user8 = {
+
+    firstName: "Bruce",
+    lastName: "Wayne",
+    pValue: 2,
+    zone: 2
+    }
+    var user9 = {
+
+    firstName: "Clark",
+    lastName: "Kent",
+    pValue: 2,
+    zone: 1
+    }
+
+    var user10 = {
+
+    firstName: "Luke",
+    lastName: "Skywalker",
+    pValue: 3,
+    zone: 3
+
+    }
+
+	var boxes = document.getElementsByClassName("box")
 for(var i=0; i < boxes.length; i++) {
- boxes[i].addEventListener("click", function(){userCheck(this.getAttribute('id').split('subBox')[1])});
+	boxes[i].addEventListener("click", function(){userCheck(this.getAttribute('id').split('subBox')[1])});
 }
 
 var users = [user1,user2,user3,user4,user5,user6,user7,user8,user9, user10];
 var userCheck = function(boxNum){
- console.log(boxNum)
- var elementToBeAppendedTo = document.getElementById('z' + boxNum);
+	console.log(boxNum)
+	var elementToBeAppendedTo = document.getElementById('z' + boxNum);
 
-   document.getElementById('view').style.visibility = 'hidden';
-   for(i=0;i<users.length; i++){
-   populate(boxNum, elementToBeAppendedTo)
-   }
+    document.getElementById('view').style.visibility = 'hidden';
+    for(i=0;i<users.length; i++){
+		populate(boxNum, elementToBeAppendedTo)
+    }
 }
 
- function populate(num, thing) {
-   if(users[i].pValue === grid[num][0] && users[i].zone === grid[num][1]){thing.insertAdjacentHTML('beforeend', "<br>" + users[i].firstName);}
- }
+	function populate(num, thing) {
+		if(users[i].pValue === grid[num][0] && users[i].zone === grid[num][1]){thing.insertAdjacentHTML('beforeend', "<br>" + users[i].firstName);}
+	}
 
- var grid = {1: [3,3],
-       2: [3,2],
-       3: [3,1],
-       4: [2,3],
-       5: [2,2],
-       6: [2,1],
+	var grid = {1: [3,3],
+				2: [3,2],
+				3: [3,1],
+				4: [2,3],
+				5: [2,2],
+				6: [2,1],
 
- 7: [1,3],
-       8: [1,2],
-       9: [1,1]
- }
 
-   /*Append to the innerHtml, and create nine of these conditional statements.
-   Once that stuff is creted, a vatiable can be created so that the href can lead to the apple pic showing up etc.. */
+	7: [1,3],
+				8: [1,2],
+				9: [1,1]
+	}
+
+    /*Append to the innerHtml, and create nine of these conditional statements.
+    Once that stuff is creted, a vatiable can be created so that the href can lead to the apple pic showing up etc.. */
 $(document).ready(function(){
-   $('[data-toggle="tooltip"]').tooltip();
+    $('[data-toggle="tooltip"]').tooltip();
 });
+
 function myFunction() {
-   var input, filter, ul, li, a, i;
-   input = document.getElementById("myInput");
-   filter = input.value.toUpperCase();
-   ul = document.getElementById("div-toggle");
-   li = ul.getElementsByTagName("li");
-   for (i = 0; i < li.length; i++) {
-       a = li[i].getElementsByTagName("a")[0];
-       if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-           li[i].style.display = "";
-       } else {
-           li[i].style.display = "none";
-       }
-   }
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("div-toggle");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+
+        }
+    }
 }
 function newElement() {
- var option = document.createElement("option");
- var inputValue = document.getElementById("myInput").value;
- var t = document.createTextNode(inputValue);
- option.appendChild(t);
- if (inputValue === '') {
-   alert("You must write something!");
- } else {
-   document.getElementById("div-toggle").appendChild(li);
- }
- document.getElementById("myInput").value = "";
- var span = document.createElement("SPAN");
- var txt = document.createTextNode("");
- span.className = "close";
- span.appendChild(txt);
- li.appendChild(span);
- for (i = 0; i < close.length; i++) {
-   close[i].onclick = function() {
-     var div = this.parentElement;
-     div.style.display = "none";
-   }
+  var option = document.createElement("option");
+  var inputValue = document.getElementById("myInput").value;
+  var t = document.createTextNode(inputValue);
+  option.appendChild(t);
+  if (inputValue === '') {
+    alert("You must write something!");
+  } else {
+    document.getElementById("div-toggle").appendChild(li);
+  }
+  document.getElementById("myInput").value = "";
 
- }
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("");
+  span.className = "close";
+  span.appendChild(txt);
+  li.appendChild(span);
 
- function myPrint() {
-   window.print();
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
+    }
+
+  }
+
+  function myPrint() {
+    window.print();
 }
 }
+
 $(document).on('change', '.div-toggle', function() {
- var target = $(this).data('target');
- var show = $("option:selected", this).data('show');
- $(target).children().addClass('hide');
- $(show).removeClass('hide');
+  var target = $(this).data('target');
+  var show = $("option:selected", this).data('show');
+  $(target).children().addClass('hide');
+  $(show).removeClass('hide');
 });
 $(document).ready(function(){
- $('.div-toggle').trigger('change');
+	$('.div-toggle').trigger('change');
 });
-</script>
+ </script>
 </html>

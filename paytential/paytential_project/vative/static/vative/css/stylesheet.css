@@ -10,16 +10,9 @@ body{
 
 #toplogo{
 position:relative;
-left:-70px;
+left:-50px;
 height:110px;
 
-}
-
-.nav a {
-  color: #5a5a5a;
-  font-size: 11px;
-  font-weight: bold;
-  text-transform: uppercase;
 }
 
 
@@ -82,12 +75,15 @@ height:110px;
 .navbar-right{
   text-align: right;
 }
-
+@media (min-width: 768px){
+.navbar-right{
+  text-align: right;
+  padding-top:60px;
+}
+}
 .navbar-center{
-  text-align: center;
-  position: relative;
-  top:100px;
-  right:-380px;
+position: relative;
+left:285px !important;
 }
 
 .parallax{
@@ -98,7 +94,7 @@ height:110px;
     background-repeat: no-repeat;
     background-size: cover;
     margin-left:-25px;
-    margin-right:-25px;
+    margin-right:-45px;
     margin-top:-20px;
 
 }
@@ -277,19 +273,21 @@ margin-bottom: 10px;
   width:300px;
 }
 @media (min-width: 768px) {
-.navbar-nav a{
-    margin-top:65px;
+.nav a {
+  color: #5a5a5a;
+  font-size: 1vw;
+  font-weight: bold;
+  text-transform: uppercase;
 }
+
 }
 #logo{
   margin:auto;
   height:500px;
 }
-.rightnav{
-  color:red;
-}
+
 .navbar-center{
   position: relative;
-  top:35px;
+  top:30px;
   left:375px;
 }

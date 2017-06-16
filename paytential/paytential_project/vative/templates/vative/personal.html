@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Easy Profile Green - templatemo</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+<!--
+Easy Profile Template
+http://www.templatemo.com/tm-467-easy-profile
+-->
+	 <script type="text/javascript">
+	 var myWindow;
+	 function openPopup()
+	 {
+		myWindow = window.open('paygraph.html','_blank', 'height=300, width=300');
+	 }
+	 fuction ClosePopup(){
+		myWindow.close();
+	 }
+	 </script>
+	<!-- stylesheet css -->
+	<link rel="stylesheet" type="text/css" href="{% static "vative/css/bootstrap.min.css" %}"/>
+	<link rel="stylesheet" type="text/css" href="{% static "vative/css/font-awesome.min.css" %}"/>
+	<link rel="stylesheet" type="text/css" href="{% static "vative/css/templatemo-green.css" %}"/>
+</head>
+<body data-spy="scroll" data-target=".navbar-collapse">
+
+<!-- preloader section -->
+<div class="preloader">
+	<div class="sk-spinner sk-spinner-wordpress">
+       <span class="sk-inner-circle"></span>
+     </div>
+</div>
+
+<!-- header section -->
+<header>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<img src="{% static "vative/images/endre.JPG" class="img-responsive img-circle tm-border" %}" alt="templatemo easy profile">
+				<hr>
+				<h1 class="tm-title bold shadow">Name: Endre Roman</h1>
+				<h1 class="white bold shadow">Product Owner</h1>
+			</div>
+		</div>
+	</div>
+</header>
+
+<!-- about and skills section -->
+<section class="container">
+	<div class="row">
+		<div class="col-md-6 col-sm-12">
+			<div class="about">
+				<h3 class="accent">Operational Unit</h3>
+				<h2>i.c.stars</h2>
+				<p>i.c.stars provide a rigorous technology-based workforce development and leadership training program</p>
+			</div>
+		</div>
+		<div class="col-md-6 col-sm-12">
+			<div class="skills">
+				<h2 class="white">Performance/Potential</h2>
+				<strong>Performance</strong>
+				<span class="pull-right">33%</span>
+					<div class="progress">
+						<div class="progress-bar progress-bar-primary" role="progressbar"
+                        aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 33%;"></div>
+					</div>
+				<strong>Potential</strong>
+				<span class="pull-right">100%</span>
+					<div class="progress">
+						<div class="progress-bar progress-bar-primary" role="progressbar"
+                        aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+					</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- education and languages -->
+<section class="container">
+	<div class="row">
+		<div class="col-md-8 col-sm-12">
+			<div class="education">
+				<h2 class="white">PayGraph</h2>
+					<div class="education-content">
+						<h4 class="education-title accent">PayGraph</h4>
+							<div class="education-school">
+							<img src="{% static "vative/images/graph.png" %}" class="pg"  width="500px" style="background-color: #fff;"/>
+							<a href="paygraph.html">  <button type="button">Pay-Graph</button>  </a><br />
+							<img src="{% static "vative/images/graph2.png" %}" class="pg"  width="500px" style="background-color: #fff;"/>
+							<a href="paygraph2.html">  <button type="button">Pay-Graph</button>
+
+
+								<!--<input type="button" value="open popup" onclick="openPopup"/>
+								<input type="button" value="close popup" onclick="closePopup"/>-->
+							</div>
+						<p class="education-description"></p>
+					</div>
+			</div>
+		</div>
+
+		</div>
+	</div>
+</section>
+
+<!-- contact and experience -->
+<section class="container">
+	<div class="row">
+		<div class="col-md-4 col-sm-12">
+			<div class="contact">
+				<h2>Contact</h2>
+					<p><i class="fa fa-map-marker"></i> 123 Rama IX Road, il</p>
+					<p><i class="fa fa-phone"></i> 773-020-0890</p>
+					<p><i class="fa fa-envelope"></i> eroman@icstars.org</p>
+					<p><i class="fa fa-globe"></i> www.endre.com</p>
+			</div>
+		</div>
+		<div class="col-md-8 col-sm-12">
+			<div class="experience">
+				<h2 class="white">Comment</h2>
+					<div class="experience-content">
+						<form action="/html/tags/html_form_tag_action.cfm" method="post">
+					<div class="cmt">
+						<textarea name="comments" id="comments" style="font-family:sans-serif;font-size:1.2em;">
+						</textarea>
+						</div>
+							<input type="submit" value="Submit">
+							</form>
+					</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+<!-- footer section -->
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+
+
+			</div>
+		</div>
+	</div>
+</footer>
+
+<!-- javascript js -->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!--<script src="js/jquery.backstretch.min.js"></script>-->
+<script src="js/custom.js"></script>
+
+</body>
+</html>

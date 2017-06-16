@@ -17,4 +17,7 @@ def json_employees(request):
 
 def json(request):
     return (render(request, 'vative/json.html'))
+
+def personal(request):
+    return (render(request, 'vative/personal.html'))
 # Create your views here.

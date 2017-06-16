@@ -2,12 +2,15 @@
 {% load staticfiles %}
 <html>
 
+  <head><!DOCTYPE html>
+<html>
+
   <head>
       	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css"  href="{% static "vative/css/stylesheet.css" %}"/>
+ <link rel="stylesheet" type="text/css"  href="{% static "vative/css/stylesheet.css" %}"/>
   </head>
   <body>
 
@@ -19,7 +22,7 @@
           <a class="navbar-brand" href ="https://www.paylocity.com/"><img src="https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_1492785654/paylocity.png" id ="toplogo" /> </a>
 
         <ul class="nav navbar-nav navbar-center">
-            <li><img src="https://cdn.onelogin.com/images/icons/square/paylocity-webpay/portal_big_2x.png?1427292875" width="80" height="80" /></li>
+            <li><img src="https://cdn.onelogin.com/images/icons/square/paylocity-webpay/portal_big_2x.png?1427292875" width="80" height="80"  /></li>
         </ul>
         <div id ="rightnav">
         <ul class="nav navbar-nav navbar-right">
@@ -35,7 +38,7 @@
 
   <div class="container-fluid">
     <div class="parallax">
-  <img src="{% static "vative/images/paytentiallogo2.png" %}" id ="logo" />
+    <img src="{% static "vative/images/paytentiallogo2.png" %}" id ="logo" />
   <div id= "description">
   <h2>Connect compensation with performance. Make smart, data-driven decisions about how to reward employees.</h2>
   </div>
@@ -91,7 +94,7 @@
     	<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
-				    <img src="{% static "vative/images/paytentiallogo2.png" %}" />
+				     <img src="{% static "vative/images/paytentiallogo2.png" %}" />
 				    					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
 					</button>
@@ -114,8 +117,7 @@
         		    	</div>
 				        <div class="modal-footer">
                             <div>
-                              <!-- This is the Log-In Button within the login model  -->
-                                <button type="submit" class="btn btn-primary btn-lg btn-block" ><a href ="dashboard.html">Login </a></button>
+                                <button type="submit" class="btn btn-primary btn-lg btn-block" href = "Dashboard.html" >Login</button>
                             </div>
 				    	    <div>
 
@@ -136,7 +138,7 @@
                                 <button type="submit" class="btn btn-primary btn-lg btn-block">Send</button>
                             </div>
                             <div>
-                                <button id="lost_login_btn" type="button" class="btn btn-link">Log In </button>
+                                <button id="lost_login_btn" type="button" class="btn btn-link">Log In</button>
 
                             </div>
 		    		    </div>
@@ -235,7 +237,7 @@
                                 <button type="submit" class="btn btn-primary btn-lg btn-block">Register</button>
                             </div>
                             <div>
-                                <button id="register_login_btn" type="button" class="btn btn-link">Log Infasfndsgkjasfgjansfgoiasngfpi</button>
+                                <button id="register_login_btn" type="button" class="btn btn-link">Log In</button>
                                 <button id="register_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
                             </div>
 		    		    </div>
@@ -276,7 +278,7 @@
                     <div class="input-group">
                       <input type="text" class="form-control" placeholder="Search for...">
                       <span class="input-group-btn">
-                        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope"></span></button>
+                        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
                       </span>
                     </div>
                     <BR>
@@ -288,16 +290,6 @@
     </footer>
 </body>
 <script>
-/* #####################################################################
-   #
-   #   Project       : Modal Login with jQuery Effects
-   #   Author        : Rodrigo Amarante (rodrigockamarante)
-   #   Version       : 1.0
-   #   Created       : 07/29/2015
-   #   Last Change   : 08/04/2015
-   #
-   ##################################################################### */
-
 $(function() {
 
     var $formLogin = $('#login-form');
@@ -307,6 +299,7 @@ $(function() {
     var $modalAnimateTime = 300;
     var $msgAnimateTime = 150;
     var $msgShowTime = 2000;
+
     $("form").submit(function () {
         switch(this.id) {
             case "login-form":

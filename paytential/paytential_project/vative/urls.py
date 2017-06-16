@@ -21,6 +21,7 @@ urlpatterns = [
     url(r'^help', views.help, name='help'),
     url(r'^dash', views.dash, name='dash'),
     url(r'^json_employees', views.json_employees),
-    url(r'^json', views.json)
+    url(r'^json', views.json),
+    url(r'^personal', views.personal, name='personal')
 
 ]
